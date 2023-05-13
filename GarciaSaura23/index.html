@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
   var hash = window.location.hash; // Grab #videoID from the URL
   hash = hash.substring(1); // Remove initial '#'
   var vid = document.getElementById(hash); // Get the 'videoID' object
+  vid.scrollIntoView(); // Ensure scroll to the video
   vid.play(); // Auto-start the linked video
 })
 </script>
