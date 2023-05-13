@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 window.addEventListener('load', function () {
-  var hash = window.location.hash;
-  hash = hash.substring(1);
-  var vid = document.getElementById(hash);
-  vid.play();
+  var hash = window.location.hash; // Grab #videoID from the URL
+  hash = hash.substring(1); // Remove initial '#'
+  var vid = document.getElementById(hash); // Get the 'videoID' object
+  vid.play(); // Auto-start the linked video
 })
 </script>
 </head>
