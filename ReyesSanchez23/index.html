@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+window.addEventListener('load', function () {
+  var hash = window.location.hash; // Grab #videoID from the URL
+  hash = hash.substring(1); // Remove initial '#'
+  var vid = document.getElementById(hash); // Get the 'videoID' object
+  vid.scrollIntoView(); // Ensure scroll to the video
+  vid.play(); // Auto-start the linked video
+})
+</script>
+</head>
+<body>
+
+<center> 
+
+<p>&nbsp;</p>
+
+<h2>Automatic signal adaptation for real-time bidirectional interaction with the nervous system</h2>
+
+<h3>Manuel Reyes Sánchez</h3>
+
+<h3>Director: Pablo Varona Martínez</h4>
+
+<h3>May 2023</h4>
+
+<h2>PhD thesis supplementary material</h2>
+
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+
+<h2>Hybrid circuit electrical coupling experiment</h2>
+<p>With both neurons in a compatible range, the conductance of the electrical synapse is gradually incremented.</p>
+<p>The Mean Square Error is calculated in real-time. The target MSE is a percentage of the initial MSE.</p>
+<p>When the target MSE is reached, the conductance stops increasing.</p>
+<p>This way, electrical synchronization is achieved with the minimum amount of current injection.</p>
+<p>Each channel audio corresponds to one neuron. When the target is achieved, both neurons fired together and thus sound, at the same time</p>
+<video id="syn_target_experiment"  style="max-height: 50vh; max-width: 100%" controls>
+  <source src="syn_target_experiment.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+
+<h2>The dynamical invariant in the living CPG</h2>
+<p>The developed algorithms detect the spikes and bursts in the signals from the living neurons.</p>
+<p>With these events, the time intervals can be detected (red, blue and black lines)</p>
+<p>In the right panel, we plot the LPPD interval and the delay against the cycle period.</p>
+<p>The video corresponds to a 28 minutes experiment.</p>
+<p>Each channel audio corresponds to one neuron. The antiphase behavior can be perceived in the audio (use headphones)</p>
+<video id="living_dynamical_invariant"  style="max-height: 50vh; max-width: 100%" controls>
+  <source src="living_dynamical_invariant.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+
+<h2>Hybrid dynamical invariant circuit using genetic algorithm</h2>
+<p>This video explains how the genetic algorithm manages to reproduce the dynamic invariant in a hybrid circuit.</p>
+<video id="hybrid_dynamical_invariant"  style="max-height: 50vh; max-width: 100%" controls>
+  <source src="hybrid_dynamical_invariant.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+
+<h2>Video of the hybrot locomotion controlled by the living CPG</h2>
+<p>When the robot is in a shadow zone, it is detected by the sensors</p>
+<p>This injects a feedback signal in the living circuit that changes the frequency of the cycles</p>
+<p>This effect can be seen in the neuron signal on the screen</p>
+<video id="hybrot_example"  style="max-height: 50vh; max-width: 100%" controls>
+  <source src="hybrot_example.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<p>&nbsp;</p>
+
+</center>
+
+</body>
+
+</html>
