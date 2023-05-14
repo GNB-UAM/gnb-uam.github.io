@@ -7,8 +7,10 @@
 window.addEventListener('load', function () {
   var hash = window.location.hash; // Grab #videoID from the URL
   hash = hash.substring(1); // Remove initial '#'
+  hash2 = hash.concat("_v");
   var vid = document.getElementById(hash); // Get the 'videoID' object
-  vid.scrollIntoView(); // Ensure scroll to the video
+  var title = document.getElementById(hash2); // Get the 'titleID' object
+  title.scrollIntoView(); // Ensure scroll to the video
   vid.play(); // Auto-start the linked video
 })
 </script>
@@ -33,13 +35,13 @@ window.addEventListener('load', function () {
 <hr>
 <p>&nbsp;</p>
 
-<h2>Hybrid circuit electrical coupling experiment</h2>
+<h2 id="syn_target_experiment">Hybrid circuit electrical coupling experiment</h2>
 <p>With both neurons in a compatible range, the conductance of the electrical synapse is gradually incremented.</p>
 <p>The Mean Square Error is calculated in real-time. The target MSE is a percentage of the initial MSE.</p>
 <p>When the target MSE is reached, the conductance stops increasing.</p>
 <p>This way, electrical synchronization is achieved with the minimum amount of current injection.</p>
 <p>Each channel audio corresponds to one neuron. When the target is achieved, both neurons fired together and thus sound, at the same time</p>
-<video id="syn_target_experiment"  style="max-height: 50vh; max-width: 100%" controls>
+<video id="syn_target_experiment_v" style="max-height: 50vh; max-width: 100%" controls>
   <source src="syn_target_experiment.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -48,13 +50,13 @@ Your browser does not support the video tag.
 <hr>
 <p>&nbsp;</p>
 
-<h2>The dynamical invariant in the living CPG</h2>
+<h2 id="living_dynamical_invariant">The dynamical invariant in the living CPG</h2>
 <p>The developed algorithms detect the spikes and bursts in the signals from the living neurons.</p>
 <p>With these events, the time intervals can be detected (red, blue and black lines)</p>
 <p>In the right panel, we plot the LPPD interval and the delay against the cycle period.</p>
 <p>The video corresponds to a 28 minutes experiment.</p>
 <p>Each channel audio corresponds to one neuron. The antiphase behavior can be perceived in the audio (use headphones)</p>
-<video id="living_dynamical_invariant"  style="max-height: 50vh; max-width: 100%" controls>
+<video id="living_dynamical_invariant_v"  style="max-height: 50vh; max-width: 100%" controls>
   <source src="living_dynamical_invariant.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -63,9 +65,9 @@ Your browser does not support the video tag.
 <hr>
 <p>&nbsp;</p>
 
-<h2>Hybrid dynamical invariant circuit using genetic algorithm</h2>
+<h2 id="hybrid_dynamical_invariant">Hybrid dynamical invariant circuit using genetic algorithm</h2>
 <p>This video explains how the genetic algorithm manages to reproduce the dynamic invariant in a hybrid circuit.</p>
-<video id="hybrid_dynamical_invariant"  style="max-height: 50vh; max-width: 100%" controls>
+<video id="hybrid_dynamical_invariant_v"  style="max-height: 50vh; max-width: 100%" controls>
   <source src="hybrid_dynamical_invariant.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -75,11 +77,11 @@ Your browser does not support the video tag.
 <hr>
 <p>&nbsp;</p>
 
-<h2>Video of the hybrot locomotion controlled by the living CPG</h2>
+<h2 id="hybrot_example">Video of the hybrot locomotion controlled by the living CPG</h2>
 <p>When the robot is in a shadow zone, it is detected by the sensors</p>
 <p>This injects a feedback signal in the living circuit that changes the frequency of the cycles</p>
 <p>This effect can be seen in the neuron signal on the screen</p>
-<video id="hybrot_example"  style="max-height: 50vh; max-width: 100%" controls>
+<video id="hybrot_example_v"  style="max-height: 50vh; max-width: 100%" controls>
   <source src="hybrot_example.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
