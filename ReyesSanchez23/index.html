@@ -7,10 +7,12 @@
 window.addEventListener('load', function () {
   var hash = window.location.hash; // Grab #videoID from the URL
   hash = hash.substring(1); // Remove initial '#'
-  hash2 = hash.concat("_v");
-  var vid = document.getElementById(hash); // Get the 'videoID' object
-  var title = document.getElementById(hash2); // Get the 'titleID' object
+  hash2 = hash.concat("_v"); // Video tag
+  
+  var title = document.getElementById(hash); // Get the 'titleID' object
   title.scrollIntoView(); // Ensure scroll to the video
+
+  var vid = document.getElementById(hash2); // Get the 'videoID' object
   vid.play(); // Auto-start the linked video
 })
 </script>
